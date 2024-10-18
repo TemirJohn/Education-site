@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <!-- Custom CSS (optional) -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-primary py-3">
+   <div class="container d-flex justify-content-between align-items-center">
+      <a href="home.html" class="text-white text-decoration-none fs-3">SkillSpring</a>
+
+      <form action="search.html" method="post" class="d-flex">
+         <input type="text" name="search_box" required class="form-control me-2" placeholder="Search courses..." maxlength="100">
+         <button type="submit" class="btn btn-light"><i class="fas fa-search"></i></button>
+      </form>
+
+      <div class="d-flex align-items-center ms-4">
+         <img src="images/pic-1.jpg" alt="" class="rounded-circle" width="40" height="40">
+         <div class="ms-2 text-white">
+            <h6 class="mb-0">Mergen Temirzhan</h6>
+            <small>Student</small>
+         </div>
+      </div>
+   </div>
+</header>
+
+<!-- Sidebar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item"><a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-question"></i> About</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+            <li class="nav-item"><a href="teachers.html" class="nav-link"><i class="fas fa-chalkboard-user"></i> Teachers</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-headset"></i> Contact Us</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+<!-- Register Section -->
+<section class="container my-5">
+   <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-10">
+         <form action="" method="post" enctype="multipart/form-data" class="bg-light p-4 shadow rounded">
+            <h3 class="text-center mb-4">Register Now</h3>
+            
+            <div class="mb-3">
+               <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+               <input type="text" name="name" id="name" placeholder="Enter your name" required maxlength="50" class="form-control">
+            </div>
+
+            <div class="mb-3">
+               <label for="email" class="form-label">Your Email <span class="text-danger">*</span></label>
+               <input type="email" name="email" id="email" placeholder="Enter your email" required maxlength="50" class="form-control">
+            </div>
+
+            <div class="mb-3">
+               <label for="password" class="form-label">Your Password <span class="text-danger">*</span></label>
+               <input type="password" name="pass" id="password" placeholder="Enter your password" required maxlength="20" class="form-control">
+            </div>
+
+            <div class="mb-3">
+               <label for="confirm-password" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+               <input type="password" name="c_pass" id="confirm-password" placeholder="Confirm your password" required maxlength="20" class="form-control">
+            </div>
+
+            <div class="mb-4">
+               <label for="profile-pic" class="form-label">Select Profile Picture <span class="text-danger">*</span></label>
+               <input type="file" accept="image/*" required class="form-control" id="profile-pic">
+            </div>
+
+            <div class="d-grid">
+               <input type="submit" value="Register New" name="submit" class="btn btn-primary">
+            </div>
+         </form>
+      </div>
+   </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

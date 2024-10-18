@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Video Playlist</title>
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-primary py-3">
+   <div class="container d-flex justify-content-between align-items-center">
+      <a href="home.html" class="text-white text-decoration-none fs-3">EducSkillSpring</a>
+
+      <form action="search.html" method="post" class="d-flex">
+         <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100" class="form-control me-2">
+         <button type="submit" class="btn btn-light">
+            <i class="fas fa-search"></i>
+         </button>
+      </form>
+
+      <div class="d-flex align-items-center">
+         <img src="images/pic-1.jpg" class="rounded-circle" width="40" height="40" alt="Profile Picture">
+         <div class="ms-2 text-white">
+            <h6 class="mb-0">Mergen Temirzhan</h6>
+            <small>Student</small>
+         </div>
+         <a href="profile.html" class="btn btn-light ms-3">View Profile</a>
+      </div>
+   </div>
+</header>
+
+
+<!-- Sidebar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item"><a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-question"></i> About</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+            <li class="nav-item"><a href="teachers.html" class="nav-link"><i class="fas fa-chalkboard-user"></i> Teachers</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-headset"></i> Contact Us</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
+
+<!-- Playlist Details Section -->
+<section class="playlist-details container my-5">
+   <h1 class="text-center mb-4">Playlist Details</h1>
+
+   <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+         <form action="" method="post" class="d-inline-block mb-3">
+            <button type="submit" class="btn btn-outline-secondary">
+               <i class="far fa-bookmark"></i> Save Playlist
+            </button>
+         </form>
+         <div class="thumb position-relative">
+            <img src="images/thumb-1.png" class="img-fluid" alt="Thumbnail">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-2">10 Videos</span>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="d-flex align-items-center mb-3">
+            <img src="images/pic-2.jpg" class="rounded-circle me-3" alt="Tutor" width="60">
+            <div>
+               <h3 class="mb-0">John Deo</h3>
+               <small class="text-muted">21-10-2022</small>
+            </div>
+         </div>
+         <div class="details">
+            <h3>Complete HTML Tutorial</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
+            <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Playlist Videos Section -->
+<section class="playlist-videos container my-5">
+   <h1 class="text-center mb-4">Playlist Videos</h1>
+
+   <div class="row g-4">
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <i class="fas fa-play position-absolute p-2"></i>
+            <img src="images/post-1-1.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 01)</h5>
+            </div>
+         </a>
+      </div>
+
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <img src="images/post-1-2.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 02)</h5>
+            </div>
+         </a>
+      </div>
+
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <img src="images/post-1-3.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 03)</h5>
+            </div>
+         </a>
+      </div>
+
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <img src="images/post-1-4.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 04)</h5>
+            </div>
+         </a>
+      </div>
+
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <img src="images/post-1-5.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 05)</h5>
+            </div>
+         </a>
+      </div>
+
+      <div class="col-md-4">
+         <a href="watch-video.html" class="card text-decoration-none">
+            <img src="images/post-1-6.png" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+               <h5 class="card-title">Complete HTML Tutorial (Part 06)</h5>
+            </div>
+         </a>
+      </div>
+   </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
